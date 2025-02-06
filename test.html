@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <!-- Добавлен блок для таймера и прогресса -->
+        <div class="quiz-header">
+            <div id="question-progress">Question 1 of 5</div>
+            <div id="timer">Time: 10s</div>
+        </div>
+        <div id="question-container">
+            <h2 id="question">Question text</h2>
+            <div class="options">
+                <button class="option">Option 1</button>
+                <button class="option">Option 2</button>
+                <button class="option">Option 3</button>
+                <button class="option">Option 4</button>
+            </div>
+            <button id="next-btn" class="hide">Next</button>
+        </div>
+        <div id="result-container" class="hide">
+            <h2>Your score is <span id="score">0</span> out of 5</h2>
+            <button id="restart-btn">Restart</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
